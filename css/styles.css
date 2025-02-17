@@ -274,7 +274,7 @@ header .row .ul-svg button:hover {
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  animation: h calc(1s * 10 * 12) linear infinite;
+  animation: h calc(2s * 3 * 12) linear infinite;
 }
 
 .hero .col-auto .hour .scorpions .h::before {
@@ -311,7 +311,7 @@ header .row .ul-svg button:hover {
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  animation: h calc(1s * 2 * 6) linear infinite;
+  animation: h calc(1s * 6) linear infinite;
 }
 
 .hero .col-auto .hour .scorpions .m::before {
@@ -348,7 +348,7 @@ header .row .ul-svg button:hover {
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  animation: h 60s linear infinite;
+  animation: h 1s linear infinite;
 }
 
 .hero .col-auto .hour .scorpions .s::before {
