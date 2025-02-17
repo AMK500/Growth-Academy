@@ -123,7 +123,6 @@ header .row nav > ul > li > ul > li > a::before {
   align-items: center;
   left: 50%;
   translate: -50% 0;
-  border-radius: 999px;
   height: 35px;
   width: 0;
   background-color: var(--orange);

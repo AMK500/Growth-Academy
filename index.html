@@ -208,16 +208,32 @@
               <img src="./img/pngegg.png" alt="" />
 
               <div class="scorpions">
-                <div class="h"></div>
+                <div class="h" id="box"></div>
 
-                <div class="m"></div>
+                <div class="m" id="box"></div>
 
-                <div class="s"></div>
+                <div class="s" id="box"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      const box = document.getElementById("box");
+
+      // تحقق إذا كان هناك موضع مخزن مسبقًا
+      let lastPosition = localStorage.getItem("boxPosition");
+
+      if (lastPosition) {
+        box.style.left = lastPosition + "px"; // تعيين الموضع المخزن
+      } else {
+        box.style.left = "300px"; // تنفيذ الأنيميشن أول مرة فقط
+        setTimeout(() => {
+          localStorage.setItem("boxPosition", 300); // حفظ الحالة النهائية
+        }, 2000);
+      }
+    </script>
   </body>
 </html>
