@@ -1,0 +1,350 @@
+/* #region */
+
+body {
+  height: 5000px;
+}
+
+:root {
+  --orange: #ff5722;
+  --white: #fff;
+  --white-2: #e6e6e6;
+  --black: #000;
+  --black-2: #21272a;
+}
+
+/* #endregion */
+
+/* _______HEADER_______ */
+/* #region Header */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 204, 188, 0.4) 0%,
+      rgba(255, 204, 188, 0.4) 100%
+    ),
+    #fff;
+}
+
+header .row {
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+header .row nav > ul {
+  display: flex;
+  gap: 32px;
+}
+
+header .row nav > ul > li {
+  position: relative;
+}
+
+header .row nav > ul > li a,
+header .row nav > ul > li span {
+  color: var(--black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+header .row nav > ul > li span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .row nav > ul > li > .active {
+  color: var(--orange);
+}
+
+header .row nav > ul > li {
+  padding: 16px 0;
+}
+
+header .row nav > ul > li > ul {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  border-radius: 6px;
+  background-color: var(--white);
+  max-height: 143px;
+  width: auto;
+  box-shadow: 0px 0px 20px 5px #00000024;
+  transition: all 0.3s;
+  visibility: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  opacity: 0;
+}
+
+header .row nav > ul > li > ul::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translateX(-50%);
+  border: 10px solid #ffffff00;
+  border-bottom-color: var(--white);
+}
+
+header .row nav > ul > li > ul > hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background: var(--white-2);
+}
+
+header .row nav > ul > li > ul > li > a {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  height: 35px;
+  min-width: 130px;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  transition: all 0.6s;
+}
+
+header .row nav > ul > li > ul > li > a::before {
+  content: "";
+  position: fixed;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  translate: -50% 0;
+  border-radius: 999px;
+  height: 35px;
+  width: 0;
+  background-color: var(--orange);
+  z-index: -1;
+  transition: all 0.6s;
+}
+
+header .row nav > ul > li > ul > li > a:hover {
+  color: var(--white);
+}
+
+header .row nav > ul > li > ul > li > a:hover::before {
+  width: 130%;
+}
+
+header .row nav > ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+}
+
+header .row .ul-svg {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+header .row .ul-svg button {
+  background: transparent;
+  border: 0;
+  transition: all 0.3s;
+}
+
+header .row .ul-svg button:hover {
+  scale: 1.3;
+}
+
+/* #endregion Header */
+
+/* ________HERO________ */
+/* #region Hero */
+
+.hero {
+  padding-top: 80px;
+  height: 582px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 204, 188, 0.4) 0%,
+      rgba(255, 204, 188, 0.4) 100%
+    ),
+    #fff;
+  position: relative;
+}
+
+.hero .row {
+  height: 502px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero .item h1 {
+  color: var(--black-2);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.hero .item p {
+  color: var(--black-2);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.hero .item .link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero .item .link a {
+  display: flex;
+  height: 56px;
+  padding: 0 32px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 2px solid var(--orange);
+  transition: all 0.3s;
+}
+
+.hero .item .link .gat {
+  color: var(--white);
+  background: var(--orange);
+}
+
+.hero .item .link .gat:hover {
+  background: transparent;
+  color: var(--orange);
+}
+
+.hero .item .link .explore {
+  color: var(--orange);
+}
+
+.hero .item .link .explore:hover {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.hero .col-auto .hour img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+
+.hero .col-auto .hour {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.hero .col-auto .hour .scorpions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+}
+
+.hero .col-auto .hour .scorpions .h {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background: #000;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  animation: h calc(1s * 10 * 12) linear infinite;
+}
+
+.hero .col-auto .hour .scorpions .h::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  height: 100px;
+  width: 10px;
+  background: #000;
+  top: -90px;
+  left: 50%;
+  translate: -50% 0;
+  border-radius: 999px;
+}
+
+.hero .col-auto .hour .scorpions .m {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background: #000;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  animation: h calc(1s * 2 * 6) linear infinite;
+}
+
+.hero .col-auto .hour .scorpions .m::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  height: 130px;
+  width: 10px;
+  background: #000;
+  top: -110px;
+  left: 50%;
+  translate: -50% 0;
+  border-radius: 999px;
+}
+
+.hero .col-auto .hour .scorpions .s {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #ff0000;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  animation: h 1s linear infinite;
+}
+
+.hero .col-auto .hour .scorpions .s::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  height: 150px;
+  width: 7px;
+  background: #ff0000;
+  top: -140px;
+  left: 50%;
+  translate: -50% 0;
+  border-radius: 999px;
+}
+
+@keyframes h {
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* #endregion Hero */
