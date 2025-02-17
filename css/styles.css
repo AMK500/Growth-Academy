@@ -290,6 +290,18 @@ header .row .ul-svg button:hover {
   border-radius: 999px;
 }
 
+.hero .col-auto .hour .scorpions .h::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 25px;
+  background: #000;
+  top: 85%;
+  left: 50%;
+  translate: -50% 0;
+  border-radius: 999px;
+}
+
 .hero .col-auto .hour .scorpions .m {
   position: absolute;
   height: 25px;
@@ -315,6 +327,18 @@ header .row .ul-svg button:hover {
   border-radius: 999px;
 }
 
+.hero .col-auto .hour .scorpions .m::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  background: #000;
+  top: 85%;
+  left: 50%;
+  translate: -50% 0;
+  border-radius: 999px;
+}
+
 .hero .col-auto .hour .scorpions .s {
   position: absolute;
   height: 20px;
@@ -324,7 +348,7 @@ header .row .ul-svg button:hover {
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  animation: h 1s linear infinite;
+  animation: h 60s linear infinite;
 }
 
 .hero .col-auto .hour .scorpions .s::before {
@@ -334,7 +358,19 @@ header .row .ul-svg button:hover {
   height: 150px;
   width: 7px;
   background: #ff0000;
-  top: -140px;
+  top: -120px;
+  left: 50%;
+  translate: -50% 0;
+  border-radius: 999px;
+}
+
+.hero .col-auto .hour .scorpions .s::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  background: #ff0000;
+  top: 120%;
   left: 50%;
   translate: -50% 0;
   border-radius: 999px;
